@@ -1,7 +1,10 @@
 class Login {
     constructor(form, fields) {
-
+        this.form = form;
+        this.fields = fields;
     }
+
+    
 }
 
 const form = document.querySelector(".loginForm");
