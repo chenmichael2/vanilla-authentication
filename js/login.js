@@ -6,7 +6,12 @@ class Login {
     }
 
     validateonSubmit() {
+        let self = this;
 
+        this.form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            self.fields.forEach((field))
+        })
     }
 }
 
