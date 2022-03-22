@@ -1,1 +1,5 @@
-class
+class Login {
+    constructor(form, fields) {
+        
+    }
+}
