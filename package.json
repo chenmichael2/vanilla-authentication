@@ -2,8 +2,9 @@
   "name": "vanilla-authentication",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "npm run server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
