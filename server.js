@@ -12,7 +12,11 @@ app.get('/users', (req, res) => {
 })
 
 app.post('/users', (req, res) => {
-    
+    const user = {
+        name: req.body.name,
+        password: req.body.password
+    }
+
 })
 
 app.listen(3000)
