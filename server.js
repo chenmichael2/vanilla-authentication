@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 
+app.use(express.json());
+
 const users = [
     {
         name: "name",
@@ -16,6 +18,10 @@ app.post('/users', (req, res) => {
         name: req.body.name,
         password: req.body.password
     }
+    console.log(req.body)
+    console.log(user);
+    users.push(user);
+    res.status(201).send();
 
 })
 
