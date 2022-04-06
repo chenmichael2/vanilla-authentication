@@ -26,8 +26,7 @@ app.get('/users', (req, res) => {
 
 app.post('/users', async (req, res) => {
     try {
-        const salt = await bcrypt.genSalt(10);
-        const hashedPassword = await bcrypt.hash(req.body.password, salt);
+        const hashedPassword = await bcrypt.hash(req.body.password, 10);
         console.log(salt)
         console.log(hashedPassword)
         const user = {
