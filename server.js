@@ -38,7 +38,6 @@ app.post('/users', async (req, res) => {
     } catch {
         res.status(500).send();
     }
-
 })
 
 app.listen(3000)
